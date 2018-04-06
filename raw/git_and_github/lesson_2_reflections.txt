@@ -31,3 +31,13 @@ Staging helps you "check off" individual changes as you review a complex commit,
 that has not yet passed your review.
 
 -------------------------------------------------------------------------------------------------------------------
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+By using branches, we can divert from the main line of commits and work on our own without hindering the main line (also
+called as master). This enables us to work on experimental features which we are free to discard or merge to master later.
+If we choose to discard, then a single command is enough and the master is unaffected. If we choose to merge, git can help
+us do it automatically. Having one branch per release cycle is also helpful as we can work independently on each release without
+affecting other releases.
+
+-------------------------------------------------------------------------------------------------------------------
