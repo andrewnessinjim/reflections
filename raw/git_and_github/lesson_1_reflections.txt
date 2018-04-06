@@ -1,0 +1,107 @@
+How did viewing a diff between two versions of a file help you see the bug that was introduced?
+
+Since we knew the previous version was working fine, it guarantees that the bug is in
+difference between the two versions. By having a look at only the differences between the 
+two files, we were easily able to spot the typo. But that's only because we were
+already told that the bug would be a typo. Otherwise it would have needed more careful observation
+to spot the bug with the difference.
+
+-------------------------------------------------------------------------------------------------------------------
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+
+Since the files we program are highly prone to changes, having a convenient form of history is useful to revert
+any changes. We always have the option of going back in time to a previous version of a file, without the need
+for us to manually save each and every change we make in a separate file. This allows us to quickly revert changes
+that may have introduced bugs, without actually having to identify the bug, because we already knew a previous version
+of the file was working just fine. This gives us time to find and fix the bug, without having to keep the entire software 
+system down. The history also has the developer name responsible for a particular change. This enables all developers 
+to be aware of the changes that are happening in the system, and communicate with the correct developer if needed, thus
+saving a lot of time. Without the history, we have to rely on leads/managers or some documentation to find out what 
+the change is related to and  who implemented it. Above all, having easy access to version history totally eliminates
+the need for the developer to constantly remember to save his changes, thus promoting more focus. There is also 
+increased confidence because the developer need not worry about messing things. He can always go back in time! This
+also promotes more focus because the mind is free of worrying whether the change would break any existing function.
+
+-------------------------------------------------------------------------------------------------------------------
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, 
+vs having versions automatically saved, like Google Docs does?
+
+Pros of manual commit
+1) You have the control to create versions that make logical sense.
+2) We can have features like commit messages which can explain the changes in the version.
+
+Cons of manual commit
+1) The developer has the added responsibility of having to remember and commit changes.
+2) Scope for human errors. 
+
+Pros of automatic commit
+1) Automatic  versioning relieves the developer from having to remember and save changes. This works very well for Google docs, 
+because documents need not be compiled, and so it's not crucial that each and every version be logical.
+
+Cons of automatic commit
+1) Majority of the versions in the history would not make sense, and wouldn't even compile for the most part. Moreover, 
+the correct version with right logical sense may not even be captured by the automatic versioning system.
+
+
+-------------------------------------------------------------------------------------------------------------------
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, 
+like Google Docs, treat each file separately?
+
+Git is designed to work with programming code. Multiple file changes occur often in coding that relate to
+a single logical change. On the other hand, google docs is designed to work with files that make sense as a single
+document and have very less or no relation at all with any other files.
+
+If Google docs allows us to save multiple files in a single commit there wouldn't be much or any use to it, but it simply
+adds complexity. But git needs the features that come with this complexity. Code versioning systems would be useless if
+didn't allow us to commit multiple files, because code from different files always work together.
+-------------------------------------------------------------------------------------------------------------------
+How can you use the commands git log and git diff to view the history of files?
+
+The git log command shows the history of changes performed on the repository. Each entry in the history contains
+useful information. This is one of the entry in the history:
+
+commit 3884eab839af1e82c44267484cf2945a766081f3
+Author: cbuckey <caroline@udacity.com>
+Date:   Fri Apr 29 12:33:05 2011 -0700
+
+    Add color
+
+The information included is:
+1) Author of the change
+2) Date/Time of the change
+3) Comment associated with the change.
+
+if we use git log --stat instead, we get some additional information:
+
+commit 3884eab839af1e82c44267484cf2945a766081f3
+Author: cbuckey <caroline@udacity.com>
+Date:   Fri Apr 29 12:33:05 2011 -0700
+
+    Add color
+
+ game.js | 16 ++++++++++++++++
+ 1 file changed, 16 insertions(+)
+
+Addition information included is:
+1) The files that were changed.
+2) The number of insertion/deletions on each file listed.
+
+the git diff command takes in two version ids, and gives us the result of their difference. We can pick the version ids to 
+use from the git log command. The difference displayed by the diff command shows the lines that were deleted, and lines that 
+were removed. We can use this to easily compare the changes between versions.
+
+-------------------------------------------------------------------------------------------------------------------
+How might using version control make you more confident to make changes that could break something?
+
+With version controll, each and every change can be recorded and even if anything breaks, we can always revert toa previous version. 
+So we need not worry about breaking anything. However, the commits must be crafted logically so that reverting is easy and flexible.
+For example, if you create a commit with a bunch of different logical changes, and if you find the one change 
+from that bunch has the bug, you won't be able to easily revert that particular change.
+
+-------------------------------------------------------------------------------------------------------------------
+Now that you have your workspace set up, what do you want to try using Git for?
+
+For working on collaborative projects in Google Udacity Challenge Scholarship - 2018
+
+-------------------------------------------------------------------------------------------------------------------
+
