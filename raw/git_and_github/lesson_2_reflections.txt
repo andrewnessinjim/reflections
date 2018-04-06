@@ -15,3 +15,19 @@ But the staging area is not a snapshot at all. It simply keeps track of the chan
 We choose what stays in the staging area. Staging area enables us to craft the commits.
 
 -------------------------------------------------------------------------------------------------------------------
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+Staging area helps us craft the commits with greater flexibility. By crafting, I mean breaking up the commits into
+logical units. This is very crucial if you want a maintainable software.
+
+You can work on multiple features/bugs in a single working directory and still craft meaningful commits. Having a
+single working  directory  which contains all of our active work is also very convenient. (This can be done without a
+staging area, only as long as the changes don't  ever overlap a file. And you also have the added responsibility of
+manually tracking whether they overlap)
+
+staging helps you split up one large change into multiple commits
+Staging helps you "check off" individual changes as you review a complex commit, and to concentrate on the stuff
+that has not yet passed your review.
+
+-------------------------------------------------------------------------------------------------------------------
