@@ -48,3 +48,9 @@ Diagrams reveal the path taken by each branch. We can use this information to fi
 each branch (and why so), and perform merges more comfortably.
 
 ------------------------------------------------------------------------------------------------------------------
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+Merging two branches causes all the changes in one branch to be present in the other branch. Using branching diagrams to
+represent the branches helps us visualize the branch tree. We can use this to see the latest common commit on both the
+branches and to determine whether a merge is required, or simply updating a branch label will get the job done.
