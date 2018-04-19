@@ -40,4 +40,11 @@ If we choose to discard, then a single command is enough and the master is unaff
 us do it automatically. Having one branch per release cycle is also helpful as we can work independently on each release without affecting other releases. Each piece of work is like a compartment, you can switch to different compartments
 without worrying about breaking or changing anything.
 
--------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------
+
+How do the diagrams help you visualize the branch structure?
+
+Diagrams reveal the path taken by each branch. We can use this information to figure out what is present or missing in
+each branch (and why so), and perform merges more comfortably.
+
+------------------------------------------------------------------------------------------------------------------
