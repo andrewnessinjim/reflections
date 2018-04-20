@@ -54,3 +54,12 @@ What is the result of merging two branches together? Why do we represent it in t
 Merging two branches causes all the changes in one branch to be present in the other branch. Using branching diagrams to
 represent the branches helps us visualize the branch tree. We can use this to see the latest common commit on both the
 branches and to determine whether a merge is required, or simply updating a branch label will get the job done.
+
+------------------------------------------------------------------------------------------------------------------
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+Git's automatic merging saves us a lot of time by merging the areas where there are no conflicts. But this feature
+cannot be trusted 100%, as there may be times when git fails to detect a merge conflict. Always merging manually
+demands a lot of time, we have to spend time for straigtforward merges too. But merging manually can reduce the scope
+of any problem that may have been introduced by git's automatic merging.
