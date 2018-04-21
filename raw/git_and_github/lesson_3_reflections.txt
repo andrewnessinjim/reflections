@@ -1,0 +1,7 @@
+When would you want to use a remote repository rather than keeping all your work local?
+
+Only I can access my local machine, so it's fine as long as I am the only person working
+on the project. But if I want to collaborate with other people, then the repository needs
+to be in a place accessible by everyone. That's when I would want to use a remote repository.
+Also, github repos can act as backups even if you're working alone.
+-------------------------------------------------------------------------------------------------------------------
